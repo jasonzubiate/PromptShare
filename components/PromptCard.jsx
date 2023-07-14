@@ -22,7 +22,7 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
         <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer">
           <Image
             src={post.creator.image}
-            alt="user_image"
+            alt="User Image"
             width={40}
             height={40}
             className="rounded-full object-contain"
@@ -45,6 +45,7 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
             }
             width={12}
             height={12}
+            alt="Copy Text"
           />
         </div>
       </div>
@@ -55,7 +56,7 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
           handleTagClick && handleTagClick(post.tag);
         }}
       >
-        {post.tag}
+        #{post.tag}
       </p>
 
       {session?.user.id === post.creator._id && pathName === "/profile" && (
