@@ -92,7 +92,7 @@ function Nav() {
                   My Profile
                 </Link>
                 <Link
-                  href="/create-prompt"
+                  href="/new-prompt"
                   className="dropdown_link"
                   onClick={() => setToggleDropdown(false)}
                 >
