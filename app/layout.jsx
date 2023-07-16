@@ -1,7 +1,6 @@
 import "@/styles/global.css";
 import Nav from "@/components/Nav";
 import Provider from "@/components/Provider";
-import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "PromptShare",
@@ -11,6 +10,9 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='/favicon.ico' />
+      </head>
       <body>
         <Provider>
           <div className="main">
